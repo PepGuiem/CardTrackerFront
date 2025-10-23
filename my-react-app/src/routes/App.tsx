@@ -1,9 +1,11 @@
-import { useState } from 'react'
 import '../scss/App.scss'
+import Header from '../components/Header.tsx'
+
 
 function App() {
   return (
     <>
+        <Header />
     </>
   )
 }

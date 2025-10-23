@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../scss/App.scss'
+import '../scss/Header.scss'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
     <div className='header-container'>
         <div className="left-side-header">
             <div className='logo-header'>
-
+                <img src="/imatges/quickBall.png" alt="" className='logo-header-img'/>
             </div>
         </div>
     </div>
