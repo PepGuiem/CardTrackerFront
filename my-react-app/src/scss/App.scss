@@ -1,0 +1,62 @@
+.tittle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tittle-img-pikachu{
+   margin-left: 50px;
+    width: 125px;
+    height: 100px;
+}
+
+.tittle-img-snorlax{
+    width: 175px;
+    height: 85px;
+}
+
+.tittle-text{
+  h1{
+    font-size: 75px;
+    inline-size: none;
+    margin: 0;
+  }
+
+  h2{
+    font-size: 25px;
+    inline-size: none;
+    margin: 0;
+  }
+
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.tracking-plans-main-container{
+    margin-top: 1%;
+    margin-left: calc(5% - 40px);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+      font-size: 30px;
+      font-weight: bold;    
+    }
+}
+
+.tracking-plans-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #141324;
+    border: 40px solid #FFEB3B;
+    border-radius: 10px;
+}
