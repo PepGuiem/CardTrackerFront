@@ -44,14 +44,15 @@
     flex-direction: column;
     justify-content: center;
 
-    p{
+    .tracking-container-tittle{
+      margin-left: 10%;
       font-size: 30px;
       font-weight: bold;    
     }
 }
 
 .tracking-plans-container{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -59,4 +60,191 @@
     background-color: #141324;
     border: 40px solid #FFEB3B;
     border-radius: 10px;
+    margin: auto;
+}
+
+.tracking-plan-card{
+    width: 20%;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.pokeball{
+  margin-left: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.superball{
+  margin-top: 37px;
+  width: 180px;
+  height: 160px;
+}
+
+.ultraball{
+  margin-top: 45px;
+  width: 150px;
+  height: 150px;
+}
+
+.tracking-plan-paragraf{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tracking-plan-text{
+  margin-bottom: 0;
+}
+
+
+  .poke-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 10px 22px 10px 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: visible; 
+  }
+
+  .poke-toggle span {
+    z-index: 1;
+    position: relative;
+  }
+
+  .poke-icon {
+    position: absolute;
+    left: -16px;
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+
+  .poke-toggle.catch {
+    background-color: #2196f3;
+    color: #fff;
+  }
+
+  .poke-toggle.caught {
+    background-color: #ffeb3b;
+    color: #000;
+    justify-content: start;
+  }
+
+    .poke-toggle.caught span {
+      
+  }
+
+  .poke-toggle:hover .poke-icon {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+.poke-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 10px 24px 10px 40px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  overflow: visible;
+  transition: all 0.3s ease;
+  user-select: none;
+
+  &.catch {
+    background-color: #2196f3;
+    color: #fff;
+    padding-left: 40px;  /* espacio para Pokéball a la izquierda */
+    padding-right: 24px;
+  }
+
+  &.caught {
+    background-color: #ffeb3b;
+    color: #000;
+    padding-left: 24px;
+    padding-right: 40px; /* deja espacio a la derecha */
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  span {
+    z-index: 1;
+    position: relative;
+  }
+
+  .poke-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+    transition: all 2s ease;
+
+    &.left {
+      left: -16px;
+    }
+
+    &.right {
+      right: -16px;
+      left: auto;
+    }
+
+    &.animating {
+      animation: poke-throw 2s ease forwards;
+    }
+  }
+}
+
+/* 🎬 Animación del lanzamiento */
+@keyframes poke-throw {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  10% {
+    transform: rotate(45deg) translateX(0);
+  }
+  20% {
+    transform: rotate(0deg) translateX(0);
+  }
+  10% {
+    transform: rotate(-45deg) translateX(0);
+  }
+  40% {
+    transform: rotate(0deg) translateX(0);
+  }
+  50% {
+    transform: rotate(45deg) translateX(0);
+  }
+  60% {
+    transform: rotate(0deg) translateX(0);
+  }
+  70% {
+    transform: rotate(-45deg) translateX(0);
+  }
+  80% {
+    transform: rotate(0deg) translateX(0);
+  }
+  90% {
+    transform: rotate(45deg) translateX(0);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
 }
