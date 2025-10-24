@@ -1,6 +1,14 @@
 import { useState } from 'react'
 import '../scss/App.scss'
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/ui/carousel"
+
 const PokeButton: React.FC = () => {
   const [caught, setCaught] = useState(false)
   const [animating, setAnimating] = useState(false)
@@ -48,7 +56,7 @@ function App() {
           <div className='tracking-plan-card'>
             <img src="/imatges/pokeball.png" alt="" className='pokeball'/>
             <h1 className='tracking-plan-text'>Free</h1>
-            <p className='tracking-plan-paragraf'>Limited 3 tracks</p>
+            <p className='tracking-plan-paragraf free-plan'>Limited 3 tracks</p>
             <PokeButton />
           </div>
 
@@ -76,6 +84,16 @@ function App() {
             <PokeButton />
           </div>
         </div>
+      </div>
+
+      <div>
+        <Carousel>
+          <CarouselContent>
+            <CarouselItem className="basis-1/3">...</CarouselItem>
+            <CarouselItem className="basis-1/3">...</CarouselItem>
+            <CarouselItem className="basis-1/3">...</CarouselItem>
+          </CarouselContent>
+        </Carousel>
       </div>
     </>
   )

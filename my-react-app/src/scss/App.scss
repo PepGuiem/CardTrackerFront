@@ -99,6 +99,9 @@
   margin-bottom: 0;
 }
 
+.free-plan{
+  margin-bottom: 60px;
+}
 
   .poke-toggle {
     position: relative;
@@ -142,10 +145,6 @@
     justify-content: start;
   }
 
-    .poke-toggle.caught span {
-      
-  }
-
   .poke-toggle:hover .poke-icon {
     transform: rotate(10deg) scale(1.1);
   }
@@ -169,7 +168,7 @@
   &.catch {
     background-color: #2196f3;
     color: #fff;
-    padding-left: 40px;  /* espacio para Pokéball a la izquierda */
+    padding-left: 40px; 
     padding-right: 24px;
   }
 
@@ -177,7 +176,7 @@
     background-color: #ffeb3b;
     color: #000;
     padding-left: 24px;
-    padding-right: 40px; /* deja espacio a la derecha */
+    padding-right: 40px;
   }
 
   &:disabled {
@@ -212,7 +211,6 @@
   }
 }
 
-/* 🎬 Animación del lanzamiento */
 @keyframes poke-throw {
   0% {
     transform: rotate(0deg) translateX(0);
